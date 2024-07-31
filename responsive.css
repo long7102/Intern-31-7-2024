@@ -1,0 +1,143 @@
+@media (max-width: 64em){
+    .header {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+    .header .title{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .header .title a:first-child{
+        margin-left: 0px;
+    }
+    .header .title a{
+        margin-left: 40px;
+    }
+    .login {
+        width: 100%;
+        align-items: center;
+    }
+    .rectangle{
+        height: auto;
+    }
+    .banner{
+        display: block;
+        padding: 120px 22px;
+    }
+    .banner-text{
+        width: 100%;
+        text-align: center;
+    }
+    .banner p{
+        font-size: 18px;
+        margin: 10px 0px;
+    }
+    .banner-img{
+        top: 10px;
+        width: 100%;
+    }
+    .banner-img img{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+    }
+    .advice{
+        padding: 50px ;
+    }
+    .advice-card{
+        display: block;
+    }
+    .advice-card-content{
+        width: auto;
+        margin: 20px;
+    }
+    .department{
+        width: 100%;
+    }
+    .department-text{
+        width: 100%;
+        text-align: center;
+    }
+    .department-img{
+        top: 0;
+        width: 100%;
+    }
+    .department-img img{
+        width: 100%;
+    }
+    .banner-button{
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .impression{
+        padding: 70px 30px;
+    }
+    .impression-card{
+        display: block;
+    }
+    .impression-card-content{
+        border-radius: 14px;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .impression-card-content:first-child{
+        margin-right: 0;
+    }
+    .img-content{
+        width: 100%;
+    }
+    .client{
+        padding: 30px ;
+    }
+    .client-card{ 
+    flex-direction: column;   
+    justify-content: center;     
+  }
+    .client-card-content{
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .client-card-content:first-child{
+        margin-right: 0px;
+    }
+    .faq{
+        padding: 90px 0;
+    }
+    .faq-card{
+        height: auto;
+    }
+    .join{
+        padding: 70px 10px;
+    }
+    .form{
+        padding: 30px;
+    }
+    .form input{
+        padding: 1px;
+    }
+    .footer-top{
+        display: block;
+        padding: 20px ;
+    }
+    .footer-bottom-content{
+        display: block;
+        padding: 40px;
+        text-align: center;
+    }
+    .footer-bottom-icon{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .footer-bottom-content p {
+        font-size: 16px;
+    } 
+    .footer-bottom-icon a {
+        color: var(--button);
+        font-size: 30px;
+        margin: 0px 44px;
+    }
+}
