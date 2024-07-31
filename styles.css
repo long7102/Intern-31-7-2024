@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Montserrat;
+
 }
 
 :root {
@@ -22,13 +25,14 @@ a {
 
 a:hover {
     color: var(--button);
+    cursor: pointer;
 }
 
 button {
     gap: 15px;
     width: 138px;
     display: flex;
-    height: 50px;
+    height: 45px;
     padding: 15px 25px;
     align-items: center;
     justify-content: center;
@@ -37,7 +41,6 @@ button {
     color: var(--var-color);
     border: none;
     position: relative;
-    height: 60px;
     font: size 1.4em;
     padding: 0 2em;
     cursor: pointer;
@@ -51,22 +54,37 @@ button {
     line-height: 50px;
     height: 100px;
     width: 100%;
-    padding: 50px 80px;
-    justify-content: flex-end;
+    padding: 50px 180px;
+    justify-content: space-around;
     margin-bottom: 40px;
     color: var(--var-color);
+    gap: 50px;
+    font-family: Montserrat;
 
 }
-
+.header h1{
+font-size: 24px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.10000000149011612px;
+text-align: left;
+}
 .header .title {
     display: flex;
-    width: 60%;
     align-items: center;
-    justify-content: space-around;
+    margin-left: -50px;
+}
+.header a{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.20000000298023224px;
+text-align: center;
+margin-left: 20px;
 }
 
 .login {
-    width: 40%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -80,7 +98,7 @@ button {
 
 .banner-text {
     align-items: center;
-    width: 55%;
+    width: 50%;
 }
 
 .banner-text h3 {
@@ -89,12 +107,14 @@ button {
 
 .banner-text p {
     margin: 50px 0px;
-    font-size: 60px;
+    font-size: 58px;
     font-weight: bold;
 }
 
 .banner-text h2 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .banner-button {
@@ -199,6 +219,7 @@ button {
 .advice-text p {
     margin: 50px 0px;
     font-size: 40px;
+    line-height: 50px;
     font-weight: bold;
     color: var(--var-color);
 }
@@ -210,11 +231,11 @@ button {
 hr {
     border: none;
     /* Loại bỏ viền mặc định */
-    height: 2px;
+    height: 7px;
     /* Chiều cao của đường kẻ */
     background-color: var(--button);
     /* Màu sắc của đường kẻ */
-    width: 50%;
+    width: 20%;
     /* Độ rộng của đường kẻ */
     margin: 7px auto;
     /* Căn giữa và tạo khoảng cách trên dưới */
@@ -238,18 +259,31 @@ hr {
 
 .department-text h4 {
     margin-bottom: 40px;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.20000000298023224px;
 }
 
-.department-text p {
-    margin: 50px 0px;
+.department-text h2 {
+    margin: 30px 0px;
     font-size: 40px;
     font-weight: bold;
 }
 
-.banner-button {
+.department .banner-button {
     display: flex;
+    color: var(--button);
+    background: transparent;
 }
-
+#department-btn{
+    background: transparent; 
+    padding: 5px 0px;
+     width: auto;
+      color: rgba(252, 114, 77, 1); 
+      font-size: 14px;
+     font-weight: 400;
+}
 .banner-button button {
     width: 170px;
     border: none;
@@ -268,7 +302,7 @@ hr {
 }
 
 .impression-text p {
-    margin: 50px 0px;
+    margin: 40px 0px;
     font-size: 40px;
     font-weight: bold;
     color: var(--var-color);
@@ -370,9 +404,6 @@ hr {
     top: 20px;
     left: 20px;
     padding: 0px 10px 0px 10px;
-    gap: 0px;
-    border-radius: 3px 0px 0px 0px;
-    opacity: 0px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -394,17 +425,37 @@ hr {
 
 }
 
-.icon i {
+.icon a {
     width: 40px;
     height: 40px;
-    padding: 10px 0px 0px 0px;
+    padding: 10px;
     gap: 0px;
     border-radius: 44.79px;
     align-items: center;
     opacity: 0px;
     background-color: rgba(255, 255, 255, 1);
-}
+    color: rgba(37, 43, 66, 1);
 
+}
+.rating{
+    width: 50px; 
+    height: 26px;
+    display: flex;
+    background: rgba(38, 51, 93, 1);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.rating img{
+    width: 16px;
+height: 16px;
+
+}
+.rating p{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+}
 .client {
     text-align: center;
     padding: 70px 150px;
@@ -433,16 +484,11 @@ hr {
 
 .client-card-content {
     text-align: center;
-    width: 260px;
-    height: 438.01px;
-    padding: 25px 25px 0px 25px;
+    width: 501px;
+    padding: 31px 133px;
     background-color: var(--var-color);
     border-radius: 10px;
     transition: transform 0.5s ease-in-out;
-
-}
-
-.client-card-content {
     transform: scale(1.02);
     transition: transform 0.5s ease;
 }
@@ -464,7 +510,6 @@ hr {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0.20000000298023224px;
     text-align: center;
     color: rgba(115, 115, 115, 1);
 
@@ -488,9 +533,7 @@ hr {
 
 .faq-card {
     flex: 1;
-    width: 333px;
-    height: 125px;
-    padding: 25px;
+    padding: 40px 25px;
     border-radius: 14px;
     gap: 5px;
     display: flex;
@@ -511,12 +554,14 @@ hr {
 
 #orange {
     color: var(--button);
-    margin-right: 5px;
+    margin-right: 10px;
+    width: 9px;
+    height: 10px;
 }
 
 .faq-card h5 {
     color: rgba(37, 43, 66, 1);
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     font-family: Montserrat;
     font-weight: 400;
@@ -525,10 +570,9 @@ hr {
     text-decoration: none;
 
 }
-
 .faq-card h6 {
     color: rgba(115, 115, 115, 1);
-    font-size: 13px;
+    font-size: 14px;
     text-align: left;
     font-family: Montserrat;
     font-weight: 400;
@@ -584,7 +628,7 @@ input {
 
 .footer-top {
     display: flex;
-    padding: 40px 120px;
+    padding: 40px 200px;
 }
 
 .footer-top-content {
@@ -595,7 +639,7 @@ input {
 
 .footer-top-content a {
     color: rgba(115, 115, 115, 1);
-    margin: 10px 0px;
+    margin: 20px 0px;
     font-size: 14px;
     gap: 10px;
 }
@@ -604,7 +648,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 120px;
+    padding: 20px 200px;
     background: rgb(226 210 210);
 }
 

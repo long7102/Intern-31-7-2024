@@ -3,17 +3,22 @@
         display: block;
         padding: 20px;
         text-align: center;
+        line-height: 30px;
     }
     .header .title{
         display: block;
         width: 100%;
-        padding: 10px 0px;
+        padding: 30px 0px;
+        margin-left: 0px;
     }
     .header .title a:first-child{
         margin-left: 0px;
     }
     .header .title a{
         margin-left: 40px;
+    }
+    .header h1{
+        text-align: center;
     }
     .login {
         width: 100%;
@@ -96,10 +101,12 @@
     .client-card{ 
     flex-direction: column;   
     justify-content: center;     
+
   }
     .client-card-content{
         margin-bottom: 20px;
         width: auto;
+        padding: 30px;
     }
     .client-card-content:first-child{
         margin-right: 0px;
